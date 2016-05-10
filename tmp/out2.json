@@ -1,0 +1,100 @@
+Query string //div[@class='review review--with-sidebar'] returns 20 results. 
+
+Now chopping the DOM into 20 bite-sized, tasty, review morsels. 
+The revised query is: //div[@class='review review--with-sidebar']//text().
+Its HTML results are: 
+                              
+                                
+                                  
+                                    
+                                      
+                                        
+                                      
+                                    
+                                    
+                                      
+                                          Juelz T.
+                                        
+                                        
+                                          San Diego, CA
+                                        
+                                      
+                                          13 friends
+                                        
+                                        
+                                          56 reviews
+                                        
+                                      
+                                  
+                                  
+                                      
+                                      
+                                      
+                                        Share review
+                                      
+                                    
+                                    
+                                      
+                                      
+                                      
+                                        Compliment
+                                      
+                                    
+                                    
+                                      
+                                      
+                                      
+                                        Send message
+                                      
+                                    
+                                    
+                                      
+                                      
+                                      
+                                        Follow Juelz T.
+                                      
+                                    
+                                    
+                                      
+                                      
+                                      
+                                        Stop following Juelz T.
+                                      
+                                    
+                                  
+                              
+                              
+                                
+                                  
+                                    
+                                      
+                                        
+                                      
+                                     4/16/2016
+                                  
+                                  
+                                    There is no worst way to start a weekend... It is Saturday morning and you drop your new phone and completely shatter your phone! :(
+                                    When I first started to search for a repair provider, I came to discover that they were not available, have run out of the supplies, or simply don't respond.  On the contrary to that, Jacob with Mobile iPhone iPad screen repair was our light at the end of the tunnel. We need our phone repaired today, and he is able to accommodate and fit us in!
+                                    Once we meet up, with Jacob, he's amazing! He is friendly, professional, and fast! He did an amazing job repairing our phone!!
+                                    So if you find yourself in a pinch like us, Jacob is the guy to contact!!  Thank you, Jacob!! Hopefully I don't need my iPhone 7 or 7s repair in the future!  :)
+                                  
+                                
+                                
+                                  
+                                    
+                                      Was this review …?
+                                    
+                                    
+                                         Useful 
+                                      
+                                      
+                                         Funny 
+                                      
+                                      
+                                         Cool 
+                                      
+                                    
+                                
+                              
+                            
+Fatal error: Call to a member function saveHTML() on a non-object in /Users/kevinzeidler/rhizome/mohole/public/vagrant/scrape.php on line 40

@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
+
+    <title>San Diego Mobile Phone Repairs</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+    <link href="css/iphone.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        #map {
+            height: 200px;
+            margin-right: 15px;
+            bottom: 0;
+            left: 0px;
+        }
+        #about > div > div > div >h2 {
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+        /*#inner-iphone-text {*/
+            /*display: inline;*/
+            /*width: 60%;*/
+            /*height: auto;*/
+            /*position: relative;*/
+            /*color: white;*/
+            /*top: 0px;*/
+            /*left: 25px;*/
+            /*top-margin: -26px;*/
+            /*font-family: 'Helvetica';*/
+        /*}*/
+
+        #callbox {
+            top: 90px;
+            width: 390px;
+            left: -60px;
+            font-size: 38px;
+            margin-top: 0px;
+        }
+        #caller-photo {
+            position: absolute;
+            width: auto;
+            float: right;
+            height: 100%;
+            width: 0px;
+            vertical-align: top;
+            margin-top: -34px;
+            padding-top: 0px;
+        }
+
+
+        #photo {
+            position: absolute;
+            float: right;
+            top: 30px;
+            right: -10px;
+            margin-top: -48px;
+        }
+
+        #date {
+            left: 40px;
+
+        }
+
+        #modal-helper {
+            position: absolute;
+            width: 100px;
+            height: 400px;
+            margin-top: 450px;
+            margin-left: 200px;
+            background: url('img/tapicon-white.svg');
+            background-size: 100% 150%;
+            transform: rotateZ(45deg) translateZ(200px) rotateX(180deg);
+            display: block;
+            opacity: 1;
+            z-index: 800;
+            /*animation: tapFinger 4s infinite ease-out;*/
+
+
+        }
+    </style>
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top"><span class="fauxlogo"><h1><img src="img/iphone-repair-icon.gif"></h1></span></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#iphone-screen-repairs">Screen Replacements</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#featured-review">Latest Review</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact-us">Make An Appointment</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#neighborhood-map">Areas We Serve</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+
+                    <div id="iphone-wrapper">
+                        <div id="iphone">
+                            <div id="shadow"></div>
+
+                            <div id="side"></div>
+                            <div id="lines">
+                                <div>
+                                    <div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="toggler">
+                                <div></div>
+                            </div>
+                            <div id="aux"></div>
+                            <div id="lightning"></div>
+                            <div id="bottom-speaker">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div id="skrews">
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div id="volume">
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div id="front">
+                                <div id="front-cover" style="display: none"></div>
+                                <div id="camera">
+                                    <div></div>
+                                </div>
+                                <div id="speaker"></div>
+                                <div id="screen">
+                                    <div id="reminder" style="visibility: hidden">
+                                        <div></div>
+                                        <div>Fixed by Jacob :)</div>
+                                        <div>now</div>
+                                    </div>
+                                    <div id="circle"></div>
+
+                                    <div id="time">12:42</div>
+                                    <div id="date">Saturday, January 4</div>
+                                    <div id="bottom" style="visibility: hidden"></div>
+                                    <div id="top" style="visibility: hidden"></div>
+                                    <div id="slide" style="z-index: 900">
+                                        <div></div>
+                                        slide to unlock
+                                    </div>
+                                    <div id="signal">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <div id="battery">
+                                        <div>86%</div>
+                                        <div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div id="home">
+                                    <div></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--<div class="intro-text">-->
+                        <!--<span class="name"></span>-->
+                        <!--<hr class="star-light">-->
+                        <!--<span class="skills"></span>-->
+                    <!--</div>-->
+            <div class="row">
+                <div class="col-lg-12">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- iphone-screen-repairs Grid Section -->
+    <section id="iphone-screen-repairs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Screen Repairs</h2>
+                    <hr class="star-primary" style="color: rgba(0,0,0,0);">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 iphone-screen-repairs-item">
+                    <a href="#iphone-screen-repairsModal1" class="iphone-screen-repairs-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x">iPhone 5/5s</i>
+                            </div>
+                        </div>
+                        <img src="img/iphone5-scaled.jpg" class="img-responsive" alt="">
+                        <p class="static-caption">iPhone 5/5s</p>
+                    </a>
+
+                </div>
+                <div class="col-sm-6 col-md-4 iphone-screen-repairs-item">
+                    <a href="#iphone-screen-repairsModal2" class="iphone-screen-repairs-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x">iPhone 5c</i>
+                            </div>
+                        </div>
+                        <img src="img/iphone5c.jpg" class="img-responsive" alt="">
+                        <p class="static-caption">iPhone 5c</p>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 iphone-screen-repairs-item">
+                    <a href="#iphone-screen-repairsModal3" class="iphone-screen-repairs-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x">iPhone 6/6s</i>
+                            </div>
+                        </div>
+                        <img src="img/iphone6s.jpeg" class="img-responsive" alt="">
+                        <p class="static-caption">iPhone 6/6s</p>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 iphone-screen-repairs-item">
+                    <a href="#iphone-screen-repairsModal4" class="iphone-screen-repairs-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x">iPhone 6+</i>
+                            </div>
+                        </div>
+                        <img src="img/iphone6s-plus.jpeg" class="img-responsive" alt="">
+                        <p class="static-caption">iPhone 6 Plus</p>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 iphone-screen-repairs-item">
+                    <a href="#iphone-screen-repairsModal5" class="iphone-screen-repairs-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x">iPad Air</i>
+                            </div>
+                        </div>
+                        <img src="img/ipad-air2.jpg" class="img-responsive" alt="">
+                        <p class="static-caption">iPad Air</p>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 iphone-screen-repairs-item">
+                    <a href="#iphone-screen-repairsModal6" class="iphone-screen-repairs-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x">iPad Mini</i>
+                            </div>
+                        </div>
+                        <img src="img/ipad-mini2.jpg" class="img-responsive" alt="">
+                        <p class="static-caption">iPad Mini</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="featured-review">
+        <div class="container" id="widget-container">
+            <!--<div class="row">-->
+                <div class="col-lg-12 text-center" id="rotd-header">
+                    <h2>Review of The Day</h2>
+                    <hr class="star-light" style="border-top: solid 0px;">
+                    <div class="letterbox">
+                    <div id="yelpwidget">
+                        <div class="widget-body">
+
+
+
+                            <div id="data-wrapper">
+                                <div id="review-headline"><a href="http://www.yelp.com/biz/mobile-iphone-repair-ipad-screen-repair-san-diego-24"><img src="img/widget-banner.jpg" width="263px;"></a></div>
+
+                                <div id="reviewer-avatar"></div>
+                                <div id="review-date"></div>
+                                <div id="reviewer-name"></div>
+                                <div id="star-rating" width='100px' height='30px'></div>
+                                <div id="city"></div>
+                                <div id ="review-content" style="text-align: left"></div>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                </div>
+                <!--</div>-->
+            </div>
+
+            <!--<div class="row">-->
+                <!--<div class="col-lg-4 col-lg-offset-2">-->
+                    <!--<p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>-->
+                <!--</div>-->
+                <!--<div class="col-lg-4">-->
+                    <!--<p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>-->
+                <!--</div>-->
+                <!--<div class="col-lg-8 col-lg-offset-2 text-center">-->
+                    <!--<a href="#" class="btn btn-lg btn-outline">-->
+                        <!--<i class="fa fa-download"></i> Download Theme-->
+                    <!--</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Request A Quote</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Name</label>
+                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Phone Number</label>
+                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Message</label>
+                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above" id="neighborhood-map">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                    <h3>Areas We Serve</h3>
+                    <div class="multicolumn">We are a mobile iPhone repair service. We're based in the Kearny Mesa part of San Diego, CA, but we're happy to drive to you&mdash;anywhere within the city of San Diego! Our goal is to make your life better and more convenient. We are proud to serve the following neighborhoods:</div>
+                        <ul>
+                            <li>Balboa Park area</li>
+                            <li>Carmel Valley</li>
+                            <li>Clairemont</li>
+                            <li>Del Mar</li>
+                            <li>Downtown San Diego</li>
+                            <li>Hillcrest</li>
+                            <li>Kearny Mesa</li>
+                            <li>Kensington</li>
+                            <li>La Jolla</li>
+                            <li>La Mesa</li>
+                            <li>Miramar/MCAS</li>
+                            <li>Mira Mesa</li>
+                            <li>Mission Valley</li>
+                            <li>North Park</li>
+                            <li>Pacific Beach</li>
+                            <li>Point Loma</li>
+                            <li>Poway</li>
+                            <li>Rancho Bernardo</li>
+                            <li>Rancho Pe&ntilde;asquitos</li>
+                            <li>Santee</li>
+                            <li>Scripps Ranch</li>
+                            <li>Tierrasanta</li>
+                        </ul>
+                    </div> <!--End multicolumn-->
+                        </div>
+                    </div>
+                <div class="row">
+                    <div class="footer-col col-md-4">
+
+                        <h5>Mailing Address</h5>
+                        <p>655 W Broadway<br>San Diego, CA</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-yelp"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="map"></div>
+                    <div class="footer-col col-md-4">
+                        <h3>About Freelancer</h3>
+                        <p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Your Website 2014
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- iphone-screen-repairs Modals -->
+    <div class="iphone-screen-repairs-modal modal fade" id="iphone-screen-repairsModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/iphone-screen-repairs/cabin.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="iphone-screen-repairs-modal modal fade" id="iphone-screen-repairsModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/iphone-screen-repairs/cake.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="iphone-screen-repairs-modal modal fade" id="iphone-screen-repairsModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/iphone-screen-repairs/circus.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="iphone-screen-repairs-modal modal fade" id="iphone-screen-repairsModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/iphone-screen-repairs/game.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="iphone-screen-repairs-modal modal fade" id="iphone-screen-repairsModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/iphone-screen-repairs/safe.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="iphone-screen-repairs-modal modal fade" id="iphone-screen-repairsModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/iphone-screen-repairs/submarine.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        // This example creates a simple polygon representing the Bermuda Triangle.
+        // When the user clicks on the polygon an info window opens, showing
+        // information about the polygon's coordinates.
+
+        var map;
+        var infoWindow;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 11,
+                center: {lat: 32.715786, lng: -117.158340},
+                mapTypeId: google.maps.MapTypeId.TERRAIN
+            });
+
+            // Define the LatLng coordinates for the polygon.
+            var triangleCoords = [
+                {lat: 32.70, lng: -117.18},
+                {lat: 32.10, lng: -117.1},
+                {lat: 32.90, lng: -117.135}
+            ];
+
+            // Construct the polygon.
+            var bermudaTriangle = new google.maps.Polygon({
+                paths: triangleCoords,
+                strokeColor: '#FF0000',
+                strokeOpacity: 0.8,
+                strokeWeight: 3,
+                fillColor: '#FF0000',
+                fillOpacity: 0.35
+            });
+            bermudaTriangle.setMap(map);
+
+            // Add a listener for the click event.
+            bermudaTriangle.addListener('click', showArrays);
+
+            infoWindow = new google.maps.InfoWindow;
+        }
+
+        /** @this {google.maps.Polygon} */
+        function showArrays(event) {
+            // Since this polygon has only one path, we can call getPath() to return the
+            // MVCArray of LatLngs.
+            var vertices = this.getPath();
+
+            var contentString = '<b>Bermuda Triangle polygon</b><br>' +
+                                'Clicked location: <br>' + event.latLng.lat() + ',' + event.latLng.lng() +
+                                '<br>';
+
+            // Iterate over the vertices.
+            for (var i =0; i < vertices.getLength(); i++) {
+                var xy = vertices.getAt(i);
+                contentString += '<br>' + 'Coordinate ' + i + ':<br>' + xy.lat() + ',' +
+                                 xy.lng();
+            }
+
+            // Replace the info window's content and position.
+            infoWindow.setContent(contentString);
+            infoWindow.setPosition(event.latLng);
+
+            infoWindow.open(map);
+        }
+    </script>
+    <script>
+        var notDone = true;
+        var clicked = false;
+        window.setTimeout(function() { $('div#iphone-wrapper' ).css('visibility', 'visible')}, 1500);
+        $("<img src='img/iphone-outer7.gif' id='outer-screen' class='broken' width='100%' height='100%'>" ).insertAfter("#front-cover");
+        $("<img src='img/dead-emoji-screen.gif' id='init-screen' class='broken' width='100%' height='100%'>" ).prependTo("#screen");
+
+
+        window.setTimeout(function() {
+            $("<img src='img/iphone-call-screen-shattered.gif' id='call-screen' class='broken' width='100%' height='100%'>" ).insertAfter("#init-screen");
+            $("#init-screen" ).remove();
+            $("<div id=\'callbox\' class='broken'>Jacob iPhone<br><small>Guy</small>" +
+              "<img id='photo' src=\'img/circlehead.gif\' width='85px' height='85px'>" +
+              "</div>").insertAfter("#time");
+            $("#callbox" ).css({'position': 'absolute',
+            'top': '70px',
+            'width': '390px',
+            'left': '-68px',
+                'line-height': '36px',
+            'font-size': '38px',
+                               'font-weight':"300"});
+            $("#time" ).remove();
+            $("#date" ).html("Mobile" ).css({"left": "28px",
+                                            "top":"152px",
+                                            "font-size":"14px"});
+
+            $('#photo' ).css({'position': 'absolute',
+                             'float': 'right',
+                             'top' : '0px',
+                             'left': '315px'});
+            $('#iphone' ).css({'animation': 'ring .5s ease-in-out infinite'});
+            $("<div id='modal-helper' class='broken'></div>").insertAfter("#iphone");
+                       $("div#modal-helper" ).css({
+                                        "background": "url('img/tapicon-white.svg')",
+                                        "background-size": "100% 100%",
+                                        "height": "100px",
+                                        "width": "100px",
+                                        "top": "300px",
+                                        "left": "300px",
+                                        "z-index": "999",
+                                        "margin-left" : "320px",
+                                        "margin-top" : "-120px",
+                                         "animation": "tapFinger 4s ease-in-out infinite",
+                                                      "position": "absolute"});
+
+            $("div#iphone" ).click(function() {
+                var brokenshit = document.getElementsByClassName('broken' );
+                if (brokenshit) {
+                    while ( brokenshit[ 0 ] ) {
+                        brokenshit[ 0 ].parentNode.removeChild( brokenshit[ 0 ] );
+                    }
+                    $( "#iphone" ).css( "animation", "none" );
+                    $("#date" ).remove();
+
+                }
+
+
+            });
+
+
+
+
+
+
+        }, 3000);
+
+
+        function randRange (max) {
+            return Math.floor(Math.random()*max+1);
+        }
+
+        data = $.getJSON( "responsev3.json", function( data ) {
+            console.log( data );
+
+            var size = Object.keys( data ).length;
+            var r1   = randRange( size - 1 );
+            for ( var i = 0; i < size; i++ ) {
+                var obj = data[ i ];
+                for ( var key in obj ) {
+                    var attrName  = key;
+                    var attrValue = obj[ key ];
+                    console.log( "data[", i, "][", attrName, "] => ", attrValue );
+                }
+            }
+
+
+
+            console.log("Today's random number is: ", r1);
+            $("<div id=\"review-date-inner\">"+data[r1]['date']+"</div>").insertAfter("#review-date");
+            $("<div id='reviewer-infobox'><span id='person'>" + data[r1]['name'] +  ", </span><span id='location'>" + data[r1]['city'] + "</span></div>").insertAfter("#reviewer-name");
+            $("<img src =\""+data[r1]['avatar']+"\" id='avatar'>").insertAfter("#reviewer-avatar");
+            $("<img id=\"stars\" src ='img/YelpStars5.jpg' >").insertAfter("#star-rating");
+            $("<p class=\"review-body\">"+data[r1]['content']+"</p>").insertAfter("#review-content");
+        });
+
+
+
+
+        //        $(document ).ready(function() {
+//            $( document ).scroll( function () {
+//                                      if ( notDone ) {
+//                                          window.setTimeout(function() {
+////        $( "<div id=\'call-screen\'></div>" ).insertAfter( $( "#visible-screen" ) );
+//
+//                                              $( "#broken" ).remove();
+//
+//                                              $( 'div#inner-iphone-text' ).html( "iPhone Repair <br><span id=\'caller-info\'>" +
+//                                                                                 " Mobile</span></div><div id=\'caller-photo\'>" +
+//                                                                                 "<img src=\"img/me-circlehead.gif\" " +
+//                                                                                 " width=\'90px\' height=\'90px\'></div>"
+//                                              );
+//                                              $( 'div#iphone' ).css( { "animation": "ring .5s 0s infinite linear" } );
+//                                              $( '#top-bar' ).css( {
+//                                                                       'visibility': 'visible',
+//                                                                       'z-index': '990'
+//                                                                   }
+//                                              );
+//
+//                                              $( "<div id=\'green-button\'></div>" ).insertAfter( $( "#call-screen" ) );
+//                                              window.setTimeout( function () {
+//                                                                     if ( !clicked ) {
+//                                                                         $( "<div id=\'modal\'></div>" ).insertBefore( $( "#callbox" ) );
+//                                                                     }
+//                                                                 }, 1500
+//                                              ); }, 1000);
+//                                          notDone =
+//                                                  false;
+//                                      }
+//                                  }
+//            );
+//
+//        });
+    </script>
+
+
+    <!-- jQuery -->
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDc3V4dOnoxsLX14R5_-PAMj0OP0xbHnyA&callback=initMap">
+    </script>
+
+</body>
+
+</html>

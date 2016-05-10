@@ -1,0 +1,1471 @@
+/*!
+ * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+p {
+    font-size: 20px;
+}
+
+p.small {
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+    color: #35AEE3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: -1.2px;
+}
+
+hr.star-light,
+hr.star-primary {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 2px;
+    text-align: center;
+}
+
+hr.star-light:after,
+hr.star-primary:after {
+    content: url('../img/screwdriver.png');
+    transform: scale3d(.6,.6,1) translateY(-25px);
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.star-light {
+    border-color: #fff;
+}
+
+hr.star-light:after {
+    color: #fff;
+    background-color: #3575C5;
+}
+
+hr.star-primary {
+    border-color: #2c3e50;
+}
+
+hr.star-primary:after {
+    color: #2c3e50;
+    background-color: #fff;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+header {
+
+    text-align: center;
+    color: #fff;
+    background: url('../img/clouds-09.jpg') center no-repeat;
+    background-size: 100% 100%;
+    /*height: 800px;*/
+}
+/* with text */
+/*header .container {*/
+    /*padding-top: 200px;*/
+    /*padding-bottom: 100px;*/
+/*}*/
+
+header .wrapper {
+    padding-top: 620px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+header .intro-text {
+    padding-top: 620px;
+}
+
+header .intro-text .name {
+    display: block;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header .intro-text .skills {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+/*@media(min-width: 0px) {*/
+    /*header {*/
+        /*top: 0px;*/
+        /*margin-top: 0px;*/
+        /*padding-top: 0px;*/
+        /*background-size: 150%;*/
+    /*}*/
+/*}*/
+
+/*@media(min-width:0px) {*/
+    /*header {*/
+        /*top: 0px;*/
+        /*margin-top: 0px;*/
+        /*padding-top: 0px;*/
+        /*background-size: 150%;*/
+    /*}*/
+    /*header .container {*/
+        /*padding-top: 300px;*/
+        /*padding-bottom: 100px;*/
+    /*}*/
+
+    /*header .intro-text .name {*/
+        /*font-size: 4.75em;*/
+    /*}*/
+
+    /*header .intro-text .skills {*/
+        /*font-size: 1.75em;*/
+    /*}*/
+/*}*/
+
+/*@media(min-width:768px) {*/
+
+    /*.navbar-fixed-top {*/
+        /*padding: 5px 0;*/
+        /*!*-webkit-transition: padding .3s;*!*/
+        /*!*-moz-transition: padding .3s;*!*/
+        /*!*transition: padding .3s;*!*/
+
+    /*}*/
+
+    /*.navbar-fixed-top .navbar-brand {*/
+        /*font-size: 2em;*/
+        /*-webkit-transition: all .3s;*/
+        /*-moz-transition: all .3s;*/
+        /*transition: all .3s;*/
+    /*}*/
+
+    /*.navbar-fixed-top.navbar-shrink {*/
+
+        /*background: url('../img/apple-metallic-texture.jpg');*/
+        /*padding: 5px 0;*/
+        /*min-height: 40px;*/
+        /*max-height: 100px;*/
+
+    /*}*/
+
+    /*.navbar-fixed-top.navbar-shrink .navbar-brand {*/
+
+        /*font-size: 1.5em;*/
+    /*}*/
+     /*nav.navbar-shrink > div > div.navbar-header.page-scroll > a > span > h1{*/
+        /*background: -webkit-linear-gradient(#ffffff,#ffffff);*/
+        /*-webkit-background-clip: text;*/
+        /*-webkit-text-fill-color: transparent;*/
+         /*animation: easeInUp .5s ease-in-out;*/
+         /*transform: scale3d(.7,.7,.7);*/
+         /*transition: all .4s ease-in-out;*/
+         /*font-weight: 400;*/
+
+    /*}*/
+/*}*/
+
+.navbar {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+
+    font-size: 12px;
+
+
+
+
+}
+
+/*.navbar-shrink {*/
+    /*transition: all 2s ease-in;*/
+    /*text-align: center;*/
+    /*!*margin-left: auto;*!*/
+    /*!*margin-right: auto;*!*/
+
+/*}*/
+/*.navbar-shrink > * {*/
+    /*transition: all 1s ease-in;*/
+/*}*/
+
+
+/*.navbar-shrink >div >div > a >.fauxlogo {*/
+
+/*margin-left: auto;*/
+/*margin-right: auto;*/
+/*top:0px;*/
+/*left: 0px;*/
+/*margin-top: -20px;*/
+/*position: absolute;*/
+/*width:  100%;*/
+    /*transition: all 1s ease-in;*/
+    /*z-index: 999;*/
+
+/*}*/
+h1 {
+    line-height: 50px;
+    font-size: 30px;
+}
+
+.navbar a:focus {
+    outline: 0;
+    /*background: -webkit-linear-gradient(#FF325F, #FF583D);*/
+    /*-webkit-background-clip: text;*/
+    /*-webkit-text-fill-color: transparent;*/
+}
+
+.navbar .navbar-nav {
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav li a:focus {
+    outline: 0;
+    /*background: -webkit-linear-gradient(#FF325F, #FF583D);*/
+    background-size: 900px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    /*color: #13B28A;*/
+    background: rgba(255,50,95,1);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff325f', endColorstr='#13b28a', GradientType=1 );
+    /*background: -webkit-linear-gradient(#FF325F, #FF583D);*/
+    border-radius: 5px;
+    /*-webkit-background-clip: text;*/
+    /*-webkit-text-fill-color: transparent;*/
+}
+
+/*.navbar-right {*/
+    /*float: right;*/
+    /*margin-right: auto;*/
+    /*margin-left: auto;*/
+    /*max-height: 65px;*/
+    /*background: url('../img/apple-metallic-texture.jpg');*/
+/*}*/
+
+.fauxlogo > h1 > img {
+    width: 70px;
+    margin-top: -10px;
+}
+
+/*.navbar-default,*/
+/*.navbar-inverse {*/
+    /*border: 0;*/
+/*}*/
+
+section {
+    padding: 100px 0;
+}
+
+section h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+section.success {
+    color: #fff;
+    background: #3575C5;
+}
+#widget-container {
+    background: url('../img/mockup-xl.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: 1000px;
+    width: 100%;
+    max-width: 100%;
+
+}
+.letterbox {
+
+}
+
+#rotd-header {
+    margin-top: -20px;
+}
+
+
+section.success a,
+section.success a:hover,
+section.success a:focus,
+section.success a:active,
+section.success a.active {
+    outline: 0;
+
+}
+
+/*@media(max-width:767px) {*/
+    /*section {*/
+        /*padding: 75px 0;*/
+    /*}*/
+
+    /*!*section.rotd {*!*/
+        /*!*background-size: contain;*!*/
+
+    /*!*}*!*/
+
+    /*section.first {*/
+        /*padding-top: 75px;*/
+    /*}*/
+/*}*/
+
+/*@media(min-width:1323px) {*/
+    /*#widget-container {*/
+        /*height:1200px;*/
+    /*}*/
+    /*div#data-wrapper {*/
+
+        /*position: absolute;*/
+        /*height: 426.5px;*/
+        /*width: 365px;*/
+        /*text-align: left;*/
+        /*top:250px;*/
+        /*margin-top: 50px;*/
+        /*left: 30%;*/
+        /*margin-left: 80px;*/
+        /*padding-left: 40px;*/
+        /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+        /*color: #000;*/
+        /*letter-spacing: normal;*/
+        /*font-size: 14px;*/
+
+
+    /*}*/
+
+    /*img#stars {*/
+        /*width: 120px;*/
+        /*margin-bottom: 8px;*/
+    /*}*/
+
+    /*#avatar {*/
+        /*margin-right: 10px;*/
+        /*margin-top: 2px;*/
+        /*margin-left: 1px;*/
+    /*}*/
+    /*img#stars {*/
+        /*width: 120px;*/
+        /*margin-bottom: 5px;*/
+    /*}*/
+    /*#review-headline > a > img {*/
+        /*width: 102%;*/
+        /*margin-bottom: 5px;*/
+    /*}*/
+/*}*/
+#iphone-screen-repairs .iphone-screen-repairs-item {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+#iphone-screen-repairs .iphone-screen-repairs-item .iphone-screen-repairs-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+#iphone-screen-repairs .iphone-screen-repairs-item .iphone-screen-repairs-link .caption {
+    position: absolute;
+    width: 102%;
+    height: 100%;
+    opacity: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fc5e57+0,ab54eb+100 */
+    background: #fc5e57; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #fc5e57 0%, #ab54eb 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  #fc5e57 0%,#ab54eb 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  #fc5e57 0%,#ab54eb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc5e57', endColorstr='#ab54eb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+
+}
+
+#iphone-screen-repairs .iphone-screen-repairs-item .iphone-screen-repairs-link .caption:hover {
+    opacity: 1;
+}
+
+#iphone-screen-repairs .iphone-screen-repairs-item .iphone-screen-repairs-link .caption .caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+
+}
+
+#iphone-screen-repairs > div > div > div > a > div > div > i:before {
+    font-family: FontAwesome;
+}
+
+#iphone-screen-repairs .iphone-screen-repairs-item .iphone-screen-repairs-link .caption .caption-content i {
+    font-family: 'HelveticaNeue LT 25 UltLight', 'Helvetica Neue', 'Helvetica', sans-serif;
+    margin-top: -12px;
+}
+
+#iphone-screen-repairs .iphone-screen-repairs-item .iphone-screen-repairs-link .caption .caption-content h3,
+#iphone-screen-repairs .iphone-screen-repairs-item .iphone-screen-repairs-link .caption .caption-content h4 {
+
+    margin: 0;
+}
+
+#iphone-screen-repairs * {
+    z-index: 2;
+   ;
+}
+
+
+.btn-outline {
+    margin-top: 14px;
+    border: solid 2px #fff;
+    font-size: 20px;
+    color: #fff;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+    transform: scale3d(0.8,0.8,1);
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+    border: solid 2px #fff;
+    background:  linear-gradient(to right, rgba(255,50,95,1) 0%, rgba(146,127,255,1) 48%, rgba(19,178,138,1) 100%);
+    background: #fff;
+}
+
+.floating-label-form-group {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #eee;
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+    z-index: 1;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    border: 0;
+    border-radius: 0;
+    font-size: 1.5em;
+    background: 0 0;
+    box-shadow: none!important;
+    resize: none;
+}
+
+.floating-label-form-group label {
+    display: block;
+    z-index: 0;
+    position: relative;
+    top: 2em;
+    margin: 0;
+    font-size: .85em;
+    line-height: 1.764705882em;
+    vertical-align: middle;
+    vertical-align: baseline;
+    opacity: 0;
+    -webkit-transition: top .3s ease,opacity .3s ease;
+    -moz-transition: top .3s ease,opacity .3s ease;
+    -ms-transition: top .3s ease,opacity .3s ease;
+    transition: top .3s ease,opacity .3s ease;
+}
+
+.floating-label-form-group:not(:first-child) {
+    padding-left: 14px;
+    border-left: 1px solid #eee;
+}
+
+.floating-label-form-group-with-value label {
+    top: 0;
+    opacity: 1;
+}
+
+.floating-label-form-group-with-focus label {
+    color: #439FB6;
+}
+
+form .row:first-child .floating-label-form-group {
+    border-top: 1px solid #eee;
+}
+
+footer {
+    color: #fff;
+}
+
+footer h3 {
+    margin-bottom: 30px;
+}
+
+footer .footer-above {
+    padding-top: 50px;
+    background-color: #2c3e50;
+}
+
+footer .footer-col {
+    margin-bottom: 50px;
+}
+
+footer .footer-below {
+    padding: 25px 0;
+    background-color: #233140;
+}
+
+.btn-social {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active {
+    outline: 0;
+}
+
+.scroll-top {
+    z-index: 1049;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    width: 50px;
+    height: 50px;
+}
+
+.scroll-top .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.scroll-top .btn:focus {
+    outline: 0;
+}
+
+.iphone-screen-repairs-modal .modal-content {
+    padding: 160px 0;
+    min-height: 90%;
+    border: 0;
+    margin-top: 60px;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.iphone-screen-repairs-modal .modal-content h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.iphone-screen-repairs-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.iphone-screen-repairs-modal .modal-content .item-details {
+    margin: 30px 0;
+}
+
+.iphone-screen-repairs-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.iphone-screen-repairs-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.iphone-screen-repairs-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.iphone-screen-repairs-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.iphone-screen-repairs-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+}
+
+/*section#rotd .success > .container {*/
+    /*background: url('../img/mockup-xl.jpg');*/
+    /*background-repeat: no-repeat;*/
+    /*min-height: 800px;*/
+    /*margin-left: 0px !important;*/
+    /*margin-right: 0px !important;*/
+    /*min-width: 100%;*/
+/*}*/
+#rotd-header {
+    margin-top: -75px;
+}
+
+#rotd {
+    padding-top: 111px;
+    padding-bottom: 0px;
+}
+
+.static-caption {
+    padding: 5px 10px;
+    text-align: center;
+}
+.fauxlogo {
+    position: absolute;
+}
+/*nav > .container  {*/
+    /*max-width: 870px;*/
+    /*margin: 0 auto;*/
+/*}*/
+
+/*.textlogo {*/
+    /*position: absolute;*/
+    /*top: 0px;*/
+    /*left: 0px;*/
+
+/*}*/
+/*.navbar-brand {*/
+    /*top: -20px;*/
+    /*margin-top: -20px;*/
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*left: 25%;*/
+    /*margin: 0 auto;*/
+
+/*}*/
+
+/*#iconlogo {*/
+    /*background: url('../img/logo-blk.gif') center center no-repeat;*/
+    /*position: absolute;*/
+    /*height: 50px;*/
+    /*width: 50%;*/
+    /*min-width: 500px;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*margin-top: 60px;*/
+    /*background-size: 50px 50px;*/
+    /*color: rgba(0,0,0,0);*/
+/*}*/
+/*nav > .container > div {*/
+    /*float: right;*/
+/*}*/
+
+
+/*.page-scroll {*/
+    /*margin-top: -0px;*/
+    /*top:0;*/
+/*}*/
+
+/*#bs-example-navbar-collapse-1 > ul.img-list > li {*/
+    /*float: left;*/
+    /*margin-left: -200px;*/
+/*}*/
+/*#page-top > nav {*/
+    /*width: 840px;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*!*border-radius: 0px 0px 5px 5px;*!*/
+/*}*/
+
+/*.navbar-right {*/
+    /*width: 840px;*/
+    /*position: absolute;*/
+    /*margin-left: -20px;*/
+/*}*/
+
+#top-gradient {
+    height: 4px;
+    max-width: 900px;
+    background: -moz-linear-gradient(left, rgba(255,50,95,1) 0%, rgba(146,127,255,1) 48%, rgba(19,178,138,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(255,50,95,1) 0%, rgba(146,127,255,1) 48%, rgba(19,178,138,1) 100%);
+    background: -o-linear-gradient(left, rgba(255,50,95,1) 0%, rgba(146,127,255,1) 48%, rgba(19,178,138,1) 100%);
+    background: -ms-linear-gradient(left, rgba(255,50,95,1) 0%, rgba(146,127,255,1) 48%, rgba(19,178,138,1) 100%);
+    background: linear-gradient(to right, rgba(255,50,95,1) 0%, rgba(146,127,255,1) 48%, rgba(19,178,138,1) 100%);
+    margin-bottom: 5px;
+}
+
+/*nav .container {*/
+    /*height: 60px;*/
+/*}*/
+
+.navbar-default .navbar-nav>.active> #navlink1 {
+    background: linear-gradient(to right, rgba(19,178,138,1) -75%, rgba(146,127,255,1) 150%);
+    border-radius: 0px 0px 0px 0px;
+}
+
+.navbar-default .navbar-nav>.active> #navlink2 {
+    background: linear-gradient(to right, rgba(146, 127, 255, 1) 0%, rgba(19, 178, 138, 1) 175%);
+    border-radius: 0px 0px 0px 0px
+}
+
+.navbar-default .navbar-nav>.active> #navlink3 {
+    background: linear-gradient(to right, rgba(19, 178, 138, 1) -75%, rgba(146, 127, 255, 1)  150%);
+    border-radius: 0px 0px 0px 0px;
+}
+
+.navbar-default .navbar-nav>.active> #navlink4 {
+    background: linear-gradient(to right, rgba(146, 127, 255, 1) 0%, rgba(255,50,95,1) 150%);
+    border-radius: 0px 0px 0px 0px
+}
+
+#featured-review {
+    background: url('../img/apple-metallic-texture.jpg');
+}
+
+#neighborhood-map {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+#neighborhood-map > div.container > div > div > div.row  {
+    text-align: left;
+
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/*#navlink1, #navlink2, #navlink3, #navlink4 {*/
+    /*margin-left: 20px;*/
+    /*padding-left: 25px;*/
+    /*font-size: 12px;*/
+/*}*/
+.navicon {
+    margin-top: -45px;
+}
+/*@media(min-width:1000px) {*/
+    /*#page-top > nav {*/
+        /*width: 1000px;*/
+    /*}*/
+
+    /*.navbar-right {*/
+        /*max-width: 1000px;*/
+        /*margin-left: -60px;*/
+        /*margin-right: auto;*/
+    /*}*/
+/*}*/
+
+
+
+    /*#page-top > nav  {*/
+        /*width:100%;*/
+        /*max-width: 1000px;*/
+    /*}*/
+    /*.navbar-right {*/
+        /*width: 100%;*/
+        /*margin-left: -60px;*/
+        /*margin-right: auto;*/
+        /*max-width: 1000px;*/
+    /*}*/
+
+
+
+
+header {
+    background-size: 100% 100%;
+    height: 1000px;
+}
+
+.success {
+    height: 1200px;
+    padding-top: 133px;
+    padding-bottom: 133px;
+}
+#rotd-header {
+    margin-top: -90px;
+}
+
+.iphone-screen-repairs-item {
+
+    height: 350px;
+}
+
+
+
+/*.img-responsive {*/
+    /*!*height: 330px;*!*/
+    /*!*!*transform: scale3d(1.85,1,1);*!*!*/
+    /*!*min-width: 100%;*!*/
+    /*!*min-height: 100%;*!*/
+/*}*/
+
+/*div > * > .iphone-screen-repairs-item {*/
+    /*height: 500px;*/
+/*}*/
+
+/*@media(max-width: 1200px) {*/
+    /*.img-responsive {*/
+        /*!*transform: scale3d(1.85, 0.85, 1);*!*/
+    /*}*/
+/*}*/
+
+/*@media(max-width:1000px) {*/
+    /*.img-responsive {*/
+        /*!*transform: scale3d(1.85, 1, 1);*!*/
+    /*}*/
+/*}*/
+@media(max-width: 770px) {
+
+
+    #iphone-screen-repairs > div {
+        /*height: 3330px;*/
+        margin-top: 100px;
+    }
+
+
+    /*.text-center {*/
+        /*max-height: 100px;*/
+    /*}*/
+
+    #rotd-header > h2 {
+        width: 100%;
+        white-space: nowrap;
+    }
+    /*nav {*/
+        /*position: absolute;*/
+    /*}*/
+    /*.scroll-top, .navbar-fixed-top {*/
+        /*position: absolute;*/
+    /*}*/
+}
+
+.navbar-default {
+    background: url('../img/apple-metallic-texture.jpg');
+}
+
+div#desktop-nav {
+    position: absolute;
+    left: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    border-radius: 0px;
+    margin-bottom: 0px;
+    max-width: 768px;
+    width: 768px;
+
+}
+
+/*@media (min-width: 768px) {*/
+    /*.navbar .navbar-nav {*/
+        /*display: inline-block;*/
+        /*float: none;*/
+        /*vertical-align: top;*/
+    /*}*/
+    /*.navbar {*/
+        /*left: 50% !important;*/
+        /*margin-left: -400px;*/
+        /*position: fixed;*/
+        /*z-index: 9999 !important;*/
+        /*font-size: 11px;*/
+    /*}*/
+
+    /*.navbar-brand {*/
+        /*display: none;*/
+    /*}*/
+
+    /*.navbar {*/
+        /*padding: 0px;*/
+        /*max-height: 65px;*/
+        /*text-align: center;*/
+    /*}*/
+
+
+    /*.left-nav {*/
+
+        /*width: 20%;*/
+        /*!*min-width: 100px;*!*/
+    /*}*/
+
+    /*#mynavbar-content, ul.nav {*/
+        /*width: 66%;*/
+        /*padding: 0px;*/
+        /*min-width: 800px;*/
+    /*}*/
+    /*.right-nav {*/
+        /*width: 20%;*/
+        /*!*min-width: 100px;*!*/
+        /*padding-left: -30px;*/
+    /*}*/
+    /*.centered {*/
+        /*margin-top: -55px;*/
+        /*!*left: 0px;*!*/
+        /*!*margin-left: -75px;*!*/
+        /*!*position: absolute;*!*/
+        /*!*display: block;*!*/
+        /*!*margin-top: -45px;*!*/
+    /*}*/
+    /*.container-fluid {*/
+
+        /*padding-left: 7.5px;*/
+        /*padding-right: 7.5px;*/
+        /*padding-top: 0px;*/
+    /*}*/
+    /*.navbar-default .navbar-nav > li > a {*/
+        /*padding-top: 12.5px;*/
+        /*padding-bottom: 0px;*/
+        /*height: 50px;*/
+        /*vertical-align: middle;*/
+    /*}*/
+    /*#navicon > img {*/
+        /*display: block;*/
+        /*position: relative;*/
+        /*padding-left: 10px;*/
+        /*margin-right: 0px;*/
+        /*margin-top: 5px;*/
+    /*}*/
+
+    /*.right-align {*/
+        /*float: right;*/
+    /*}*/
+/*}*/
+
+
+
+.navbar-brand {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+
+
+
+}
+
+
+/* DEMO example styles for logo image */
+.navbar-brand {
+    padding: 0px;
+    margin-top: 5px;
+}
+.navbar-brand>img {
+    height: 250%;
+    margin-top: -45px;
+
+    /*padding: 7px 14px;*/
+
+    transform: translateX(7px);
+}
+
+.container {
+    /*padding: 0px !important;*/
+    /*margin: 0px;*/
+}
+.navbar {
+    z-index: 9999;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    height: 65px;
+}
+
+#page-top  {
+    overflow-x: hidden !important;
+    width: 100%;
+}
+
+nav li {
+    width: 133px;
+    margin-top: -5px;
+    height: 50px;
+}
+ul {
+    text-align: center;
+
+}
+nav > img {
+transform: translateX(-5px);
+}
+#navbar {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 10px;
+}
+
+.navbar li {
+    width: 150px;
+}
+
+@media (min-width: 768px) {
+    #regions {
+        left: 0px;
+        margin-top: 15px;
+        /*!*margin-left: 30px;*!*/
+        /*margin-bottom: 15px;*/
+    }
+    #regions > ul > li {
+        /*width: 250px;*/
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+    }
+    .navbar-collapse {
+        background: black;
+        width: 50%;
+    }
+
+    .navbar-collapse > ul {
+        left: 0px;
+        margin-left: 7.5px;
+        margin-right: 7.5px;
+        text-align: left;
+
+    }
+
+    .navbar-collapse > ul > li {
+        width: 100%;
+    }
+
+    #page-top {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .btn-primary {
+        right: 0px;
+        margin-right: 0px;
+        float: right;
+    }
+    #map {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    /*#regions {*/
+        /*margin-top: 15px;*/
+        /*position: relative;*/
+        /*padding-top: 30px;*/
+    /*}*/
+
+}
+
+@media (min-width: 1200px) {
+    #data-wrapper {
+        top: 56px !important;
+    }
+}
+
+
+@media (min-width: 991px) {
+    .navbar {
+        min-width: 875px;
+    }
+    .navbar li {
+        width: 175px;
+    }
+
+
+}
+
+@media (min-width:415px) {
+    .navbar-fixed-bottom {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 660px) {
+
+
+    h2 {
+        font-size: 35px !important;
+    }
+    #iphone-screen-repairs > div > div > div > a > p {
+        font-size: 25px;
+    }
+    .iphone-screen-repairs-item {
+        height: 400px !important;
+    }
+    .navbar-brand > img {
+        transform: translateY(-7.5px);
+    }
+    #iphone-screen-repairs {
+        height: 1600px !important;
+    }
+
+    .scroll-top .btn {
+        display: none;
+    }
+
+    #data-wrapper {
+        top:0px !important;
+        margin-top: -130px !important;
+    }
+
+
+
+    .navbar-default {
+        width: 100% !important;
+        max-width: 100%;
+        position: fixed;
+    }
+    #mobile-page-container {
+        width: 100% !important;
+        max-width: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+
+    }
+    .geo {
+        left: 0px;
+        margin-left: -15px;
+        padding-left: 0px;
+        margin-right: 10px;
+        min-width: 50%;
+    }
+    .geo-left > li,.geo-right > li, .geo-center>li {
+        width: 150px;
+        margin-left: 10px;
+        /*padding-left: 10px;*/
+        /*-webkit-padding-start: 20px;*/
+
+
+    }
+    #rotd-header {
+        height: 400px;
+        margin-top: -100px;
+    }
+    #rotd-header > h2 {
+        white-space: normal;
+        margin-top: -30px;
+    }
+    ul {
+        -webkit-padding-start: 0px;
+
+    }
+    .success h2 {
+        margin-top: -20px;
+
+    }
+
+
+}
+
+#regions {
+    margin-top: 50px;
+    text-align: left;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.navbar-left {
+    padding-left: 0px;
+    left: 0px;
+    margin-left: -7.5px;
+}
+.navbar-right {
+    margin-right: -7.5px;
+}
+
+.navbar-default .navbar-nav>.active {
+    transform: scaleY(0.95);
+}
+#regions > div > ul {
+    text-align: left;
+    /*margin-right: 15px;*/
+}
+#map {
+    /*left: 0px;*/
+    /*right: 0px;*/
+    /*margin-left: 0px !important;*/
+    margin-right: 0px !important;
+}
+.scroll-top .btn {
+    float: right;
+}
+#page-top > div.scroll-top.page-scroll.visible-xs.visible-sm > a {
+    padding-left: 14px;
+    padding-top: 7.5px;
+}
+.btn-primary {
+    background: rgba(19,178,138,1);
+    border-color: rgba(19,178,138,1);
+}
+
+.btn-primary:hover {
+    background: rgba(255,50,95,1);
+    border-color: rgba(255,50,95,1);
+
+
+}
+
+#mobile-page-container {
+    width: 100%;
+    max-width: 100%;
+    min-height: 3000px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.static-caption {
+    color: #439FB6;
+    margin-top: 7.5px;
+    font-size: 30px;
+    font-weight: 500;
+    /*font-color: linear-gradient(to right, rgba(255,50,95,1) 0%, rgba(146,127,255,1) 48%, rgba(19,178,138,1) 100%);*/
+}
+
+#regions ul {
+    list-style: none;
+}
+ul > li.geoicon {
+    margin-top: 7.5px;
+}
+
+ul > li.styleB {
+    background: url('../img/circleicon6-300.png') no-repeat;
+    background-size: 20px 20px;
+    padding-left: 30px;
+}
+ul > li.styleD {
+    background: url('../img/circleicon6-300.png') no-repeat;
+
+    background-size: 20px 20px;
+    padding-left: 30px;
+}
+ul > li.styleA {
+    background: url('../img/circleicon6-300.png') no-repeat;
+
+    background-size: 20px 20px;
+    padding-left: 30px;
+}
+
+ul > li.styleC {
+    background: url('../img/circleicon6-300.png') no-repeat;
+
+    background-size: 20px 20px;
+    padding-left: 30px;
+}
+
+.success {
+    text-align: center;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    background: white;
+
+}
+.success h2 {
+    position: absolute;
+    text-align: center;
+    top: 40px;
+    display: block;
+    width: 100%;
+    margin-top: 1%;
+    left:0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.iphone-screen-repairs-item {
+    height: 500px;
+}
+
+.modal-content h3 {
+    font-family: "HelveticaNeue LT 25 UltLight", "Helvetica Neue", "Helvetica", "Arial";
+    font-size: 45px;
+    text-transform: unset;
+}
+.iphone-screen-repairs-modal {
+    height: 90%;
+    max-height: 90%;
+}
+
+h2 {
+    font-weight: 900;
+}
+
+.navbar-fixed-bottom {
+    background: rgba(12,12,12,.7);
+    height: 100px;
+}
+#ctc > a> img {
+    max-width: 100%;
+    transform: translateY(4px);
+}
+@-webkit-keyframes rubberBand {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(.95, 1.05, 1);
+        transform: scale3d(.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, .95, 1);
+        transform: scale3d(1.05, .95, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes rubberBand {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(.95, 1.05, 1);
+        transform: scale3d(.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, .95, 1);
+        transform: scale3d(1.05, .95, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.rubberBand {
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
+}
+
+#congratulations {
+    margin-left: 100px;
+    positon: absolute;
+    z-index: 99999 !important;
+    color: rgba(255,50,95,1);
+    transition: all 2s;
+    animation-name: rubberBand;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    opacity: 0;
+    top: 150px;
+    position: absolute;
+}
+.modal-body h3 {
+    text-transform: none;
+    letter-spacing: normal;
+    font-family:  "Helvetica CE 35 Thin", "HelveticaNeue LT 25 UltLight",  "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+#navbar > ul.nav.navbar-nav> li > a {
+    border-radius: 5px;
+
+}
+/* tweak to precisely fit the hover to the navbar */
+#navbar > ul.nav.navbar-nav.navbar-left > li.active > a {
+    transform: translate3d(-7.5px,0px,0px) scale3d(1,1.1,1);
+    border-radius: 1px;
+    transition: all 2s;
+
+}
+
+#navbar > ul.nav.navbar-nav.navbar-right > li.active > a {
+
+    transform: translate3d(7.1px,0px,0px) scale3d(1,1.1,1);
+    border-radius: 1px;
+    transition: all 2s;
+}
