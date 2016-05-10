@@ -813,35 +813,45 @@
 //                                console.log("data[", i, "][", attrName, "] => ", attrValue);
                                        }
                                    }
+
+                                   $( "<div id=\"review-date-inner\">" + data[ r1 ][ 'date' ] + "</div>" ).insertAfter(
+                                           "#review-date"
+                                   );
+                                   $( "<div id='reviewer-infobox'><span id='person'>"
+                                      + data[ r1 ][ 'name' ]
+                                      + ", </span><span id='location'>"
+                                      + data[ r1 ][ 'city' ]
+                                      + "</span></div>"
+                                   ).insertAfter( "#reviewer-name" );
+                                   $( "<img src =\"" + data[ r1 ][ 'HDAvatar' ] + "\" id='avatar'>" )
+                                           .insertAfter( "#reviewer-avatar" );
+                                   $( "<img id=\"stars\" src ='img/YelpStars5.jpg' >" ).insertAfter( "#star-rating" );
+                                   $( "<p class=\"review-body\">" + data[ r1 ][ 'review' ] + "</p>" ).insertAfter(
+                                           "#review-content"
+                                   );
+                                   $( '#data-wrapper' ).css( 'left',
+                                                             (window.innerWidth / 2
+                                                             ) - 132
+                                   );
+                                   $( window ).resize( function () {
+
+                                                           console.log( "Resize handler called." );
+                                                           console.log( "window.innerHeight: " + window.innerWidth );
+                                                           console.log( "offset: ",
+                                                                        (window.innerWidth / 2
+                                                                        ) - 118
+                                                           );
+                                                           $( "#data-wrapper" ).css( 'left',
+                                                                                     (window.innerWidth / 2
+                                                                                     ) - 132
+                                                           );
+                                                       }
+                                   );
+                                   if ( window.innerWidth < 760 ) {
+                                       $( 'header' ).css( 'display', 'none' )
+                                   }
                                }
                     );
-
-            $( "<div id=\"review-date-inner\">" + data[ r1 ][ 'date' ] + "</div>" ).insertAfter(
-                    "#review-date"
-            );
-            $( "<div id='reviewer-infobox'><span id='person'>"
-               + data[ r1 ][ 'name' ]
-               + ", </span><span id='location'>"
-               + data[ r1 ][ 'city' ]
-               + "</span></div>"
-            ).insertAfter( "#reviewer-name" );
-            $( "<img src =\"" + data[ r1 ][ 'HDAvatar' ] + "\" id='avatar'>" )
-                    .insertAfter( "#reviewer-avatar" );
-            $( "<img id=\"stars\" src ='img/YelpStars5.jpg' >" ).insertAfter( "#star-rating" );
-            $( "<p class=\"review-body\">" + data[ r1 ][ 'review' ] + "</p>" ).insertAfter(
-                    "#review-content"
-            );
-            $('#data-wrapper' ).css('left', (window.innerWidth/2)-132);
-            $(window).resize(function() {
-
-                console.log("Resize handler called.");
-                console.log("window.innerHeight: " + window.innerWidth);
-                console.log("offset: ", (window.innerWidth/2)-118);
-                $( "#data-wrapper" ).css('left', (window.innerWidth/2)-132);
-            });
-            if (window.innerWidth < 760) {
-                $('header').css('display', 'none')
-            }
         }
     </script>
     <!-- Bootstrap Core JavaScript -->
