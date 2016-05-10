@@ -768,22 +768,31 @@ body, html {
     /*bottom: 0;*/
     /*left: 0;*/
     /*background-color: white;*/
-    position: absolute;
-    width: 216px;
+    /*position: absolute;*/
+    /*width: 216px;*/
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #000;
     letter-spacing: normal;
     font-size: 14px;
-    height: 426.5px;
+    /*height: 426.5px;*/
     width: 210px;
     top: 120px;
     position: relative;
     margin-top: 35px;
+    height: 460px !important;
+    /*width: 265px;*/
+    right: 200px;
+    margin-top: 135px;
+    text-align: left;
+    margin-right: -40px;
+
     /*margin-left: auto;*/
     /*margin-right: auto;*/
     /*left: 230px;*/
     /*box-shadow: 0 0 .3em rgba(30,30,30,.7);*/
     border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y: scroll !important;
 }
 
 #review-headline {
@@ -863,14 +872,15 @@ body, html {
 
 }
 
-#data-wrapper {
-    height: 460px;
-    width: 265px;
-    right: 200px;
-    margin-top: 135px;
-    text-align: left;
-    margin-right: -40px;
-}
+/*#data-wrapper {*/
+    /*height: 460px;*/
+    /*width: 265px;*/
+    /*right: 200px;*/
+    /*margin-top: 135px;*/
+    /*text-align: left;*/
+    /*margin-right: -40px;*/
+    /*overflow: scroll;*/
+/*}*/
 
 #review-headline > a > img {
     top: 5px;
