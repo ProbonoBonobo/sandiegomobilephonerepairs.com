@@ -796,11 +796,6 @@ body, html {
 
 }
 
-/*#review-headline > a > img {*/
-/*width: 105%;*/
-/*margin-left: -2.5%;*/
-/*margin-top: -5%*/
-/*}*/
 
 #avatar {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 4px 0px;
@@ -809,9 +804,6 @@ body, html {
     float: left;
     height: 100px;
     width: 100px;
-    /*perspective-origin: 50px 50px;*/
-    /*transform-origin: 50px 50px;*/
-    /*font: normal normal normal normal 14px / 21px 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
     margin: 0px 7px 0px 0px;
     margin-bottom: 1.5px;
     margin-top: 2px;
