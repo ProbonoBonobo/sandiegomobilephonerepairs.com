@@ -789,7 +789,7 @@ body, html {
     border-radius: 5px;
     overflow-x: hidden;
 
-    overflow-y: scroll !important;
+    overflow-y: hidden;
 }
 
 #data-wrapper::-webkit-scrollbar {
