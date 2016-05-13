@@ -150,8 +150,9 @@
 }
 
 body, html {
-    font-family: "HelveticaNeue LT 25 UltLight", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+    font-family: "HelveticaNeue LT 25 UltLight", "Helvetica", "Helvetica Neue", Lato, "Arial", sans-serif;
     /*background: #f5f5f5;*/
+    font-weight: 300;
     color: #333;
     letter-spacing: 1px;
 }
@@ -787,7 +788,12 @@ body, html {
     margin-right: -40px;
     border-radius: 5px;
     overflow-x: hidden;
+
     overflow-y: scroll !important;
+}
+
+#data-wrapper::-webkit-scrollbar {
+    width: 0 !important;
 }
 
 #review-headline {
@@ -836,8 +842,16 @@ body, html {
 
 }
 
-#location, #person {
-    font-family: 'Helvetica Neue', 'Helvetica';
+#person {
+    font-family: 'Lato';
+    font-weight: 400;
+
+}
+
+#location, {
+    /*font-family: 'Helvetica Neue', 'Helvetica',*/
+    font-family: 'Lato';
+    font-weight: 700;
 }
 
 #stars {
@@ -851,6 +865,8 @@ body, html {
 }
 
 .review-body {
+    font-family: 'Lato';
+    font-weight: 300;
     font-size: 14px;
     letter-spacing: normal;
     top: 0;

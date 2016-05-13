@@ -399,6 +399,7 @@ section.success a.active {
 #iphone-screen-repairs .iphone-screen-repairs-item .iphone-screen-repairs-link .caption {
     position: absolute;
     width: 102%;
+
     height: 100%;
     opacity: 0;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fc5e57+0,ab54eb+100 */
@@ -436,7 +437,8 @@ section.success a.active {
 }
 
 #iphone-screen-repairs .iphone-screen-repairs-item .iphone-screen-repairs-link .caption .caption-content i {
-    font-family: 'HelveticaNeue LT 25 UltLight', 'Helvetica Neue', 'Helvetica', sans-serif;
+    font-family: 'HelveticaNeue LT 25 UltLight', 'Helvetica Neue', Helvetica, Lato, sans-serif;
+    font-weight: 100;
     margin-top: -12px;
 }
 
@@ -1332,7 +1334,8 @@ ul > li.styleC {
 }
 
 .modal-content h3 {
-    font-family: "HelveticaNeue LT 25 UltLight", "Helvetica Neue", "Helvetica", "Arial";
+    font-family: "HelveticaNeue LT 25 UltLight", "Helvetica Neue", Helvetica, Lato, "Arial";
+    font-weight: 100;
     font-size: 45px;
     text-transform: unset;
 }
@@ -1437,7 +1440,6 @@ h2 {
     position: absolute;
     margin-top: 110px;
     font-size: 23px;
-    box-shadow: 2px rgba(80,80,80,1);
     z-index: 99999 !important;
     color: rgba(255,255,255,1);
     transition: all 2s;
@@ -1451,7 +1453,8 @@ h2 {
 .modal-body h3 {
     text-transform: none;
     letter-spacing: normal;
-    font-family:  "Helvetica CE 35 Thin", "HelveticaNeue LT 25 UltLight",  "Helvetica Neue", "Helvetica", sans-serif;
+    font-family:  "Helvetica CE 35 Thin", "HelveticaNeue LT 25 UltLight",  "Helvetica Neue", Helvetica, Lato, sans-serif;
+    font-weight: 100;
 }
 
 #navbar > ul.nav.navbar-nav> li > a {
