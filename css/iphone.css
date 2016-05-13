@@ -779,17 +779,16 @@ body, html {
     width: 265px;
     top: 120px;
     position: relative;
-    margin-top: 35px;
     height: 475px !important;
     /*width: 265px;*/
     right: 200px;
     margin-top: 145px;
     text-align: left;
-    margin-right: -40px;
     border-radius: 5px;
     overflow-x: hidden;
-
-    overflow-y: hidden;
+    left: 0px;
+    margin-left: 0px;
+    overflow-y: scroll;
 }
 
 #data-wrapper::-webkit-scrollbar {
@@ -799,6 +798,7 @@ body, html {
 #review-headline {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
+     max-width: 265px;
 
 }
 
@@ -830,7 +830,6 @@ body, html {
     font-size: 9px;
     top: 0;
     left: 0;
-    width: auto;
     height: 15px;
     margin-left: 10px;
 
@@ -887,8 +886,9 @@ body, html {
 #review-headline > a > img {
     top: 5px;
     margin-top: 5px;
-    width: 103%;
-    margin-left: -8px;
+    width: 100%;
+    max-width: 265px;
+    left: 0px;
 
 }
 
