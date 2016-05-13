@@ -776,7 +776,7 @@ body, html {
     letter-spacing: normal;
     font-size: 14px;
     /*height: 426.5px;*/
-    width: 3765px;
+    width: 3767px;
     top: 120px;
     position: relative;
     height: 475px !important;
@@ -788,8 +788,8 @@ body, html {
     overflow-x: hidden;
     left: 0px;
     margin-left: 0px;
-    padding-left: 1px;
-    padding-right: 3505px;
+    padding-left: 0px;
+    padding-right: 3506px;
     overflow-y: scroll;
 }
 
