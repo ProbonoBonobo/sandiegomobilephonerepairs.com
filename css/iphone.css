@@ -843,14 +843,13 @@ body, html {
 }
 
 #person {
-    font-family: 'Lato';
+    font-family: 'Helvetica Neue', Lato;
     font-weight: 400;
 
 }
 
-#location, {
-    /*font-family: 'Helvetica Neue', 'Helvetica',*/
-    font-family: 'Lato';
+#location {
+    font-family: 'Helvetica Neue', Lato;
     font-weight: 700;
 }
 
@@ -865,7 +864,7 @@ body, html {
 }
 
 .review-body {
-    font-family: 'Lato';
+    font-family: 'Helvetica Neue', Lato;
     font-weight: 300;
     font-size: 14px;
     letter-spacing: normal;
