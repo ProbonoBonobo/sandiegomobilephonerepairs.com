@@ -191,10 +191,9 @@ section.success {
     background: url('../img/mockup-xl.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto 100%;
-    height: 1000px;
-    width: 100%;
-    max-width: 100%;
+    background-size: auto 100vw;
+    height: 90vh;
+    width: 100vw;
 
 }
 .letterbox {
@@ -1284,7 +1283,7 @@ body, html {
     left: 5px;
     top: 5px;
     box-shadow: inset #000 0 0 0 4px, #555 0px 0 3px 0px, #222 -3px 2px, #000 -5px 5px, #E0E0E0 -7px 6px 1px, #6D6D6D -7px 6px 9px;
-    /*transform: translateZ(0px);*/
+    transform: translateZ(0.0001px);
 }
 
 #front-cover {
@@ -1925,8 +1924,7 @@ body, html {
 #review-headline > a > img {
     top: 5px;
     margin-top: 5px;
-    width: 100%;
-    max-width: 265px;
+    width: 25vw;
     left: 0px;
 
 }
