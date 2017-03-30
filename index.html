@@ -48,7 +48,85 @@
         });
     </script>
     <style>
+	/* Tweaks mainly for compatibility at very large resolutions. View width (vw) property does break compatibility with old browsers, but they'll be dead soon anyway */
+	
 
+#data-wrapper {
+    padding-right: 0px !important;
+    width: 27vw;
+    left: 37vw;
+    /*margin-top: 0px !important;*/
+    top: 23vw;
+}
+#review-headline {
+    background: url("http://www.sandiegoiphonerepair.com/img/widget-banner.jpg");
+    background-size: 26vw;
+    width: 26vw;
+    max-width: 100%;
+}
+
+#featured-review {
+    height: 120vw;
+}
+
+
+#widget-container {
+    top: 5px;
+    height: 100vw;
+}
+@media (min-width: 1200px) {
+	#data-wrapper {
+		top: 8vw;
+	}
+} @media (min-width: 815px) {
+	#data-wrapper {
+		top:  8vw;
+	}
+} @media (max-width: 550px) {
+	#featured-review {
+		height: 900px;
+	}
+	#widget-container {
+		height: 800px;
+		background-size: auto 800px;
+	}
+	#data-wrapper {
+		top: 9vw;
+		width: 24vw;
+	} 
+}
+
+#data-wrapper > * + * {
+    font-size: 1.5vw;
+    
+}
+#review-date-inner {
+    font-size: 1vw;
+    height: 20px;
+    min-height: 1.2vw;
+}
+#avatar {
+    width: 10vw !important;
+    height: 10vw;
+}
+#review-headline > a > img {
+    width: 26.5vw;
+}
+#review-headline {
+    height: 12vw;
+    background-image: url("./img/widget-banner.jpg");
+    background-size: auto 1;
+    background-repeat: no-repeat;
+}
+#review-content {
+    height: 100%;
+}
+.review-body {
+    margin: none !important;
+    width: 100%;
+    height: 100%;
+    font-size: 2vh;
+}
     </style>
 </head>
 
@@ -263,8 +341,9 @@
                     <hr class="star-light" style="border-top: solid 0px; visibility: hidden">
                 </div>
                             <div id="data-wrapper">
-                                <div id="review-headline"><a href="http://www.yelp.com/biz/mobile-iphone-repair-ipad-screen-repair-san-diego-24"><img src="img/widget-banner.jpg" width="263px;"></a></div>
-
+                                <div id="review-headline"></div>
+				<!--
+					<a href="http://www.yelp.com/biz/mobile-iphone-repair-ipad-screen-repair-san-diego-24"><img src="img/widget-banner.jpg"style="hidden" width="263px;"></a></div> -->
                                 <div id="reviewer-avatar"></div>
                                 <div id="review-date"></div>
                                 <div id="reviewer-name"></div>
@@ -845,20 +924,30 @@
                                    $( "<img src =\"" + data[ r1 ][ 'HDAvatar' ] + "\" id='avatar'>" )
                                            .insertAfter( "#reviewer-avatar" );
                                    $( "<img id=\"stars\" src ='img/YelpStars5.jpg' >" ).insertAfter( "#star-rating" );
-                                   $( "<p class=\"review-body\">" + data[ r1 ][ 'review' ] + "</p>" ).insertAfter(
+                                   /*$( "<p class=\"review-body\">" + data[ r1 ][ 'review' ] + "</p>" ).insertAfter(
                                            "#review-content"
-                                   );
-/*
+                                   );*/
+                                   $(
+					"<p class=\"review-body\">" 
+						+ data[ r1 ][ 'review' ]
+						+ "</p>"
+				  ).appendTo($("#review-content"));
+				/*
                                    $( '#data-wrapper' ).css( 'left',
                                                              (window.innerWidth / 2
                                                              ) - 150
                                    );
-				:
-                                   $( window ).resize( function () {
+				*/
+				var B = 20
+				var E = Math.log(1 + 1/B)
+				var A = Math.floor(window.innerWidth / 100);
+				
+                                   
+				$( window ).resize( function () {
 
                                                            console.log( "Resize handler called." );
                                                            console.log( "window.innerHeight: " + window.innerWidth );
-                                                           console.log( "offset: ",
+                                   /*                        console.log( "offset: ",
                                                                         (window.innerWidth / 2
                                                                         ) - 131.5
                                                            );
@@ -867,13 +956,19 @@
                                                                                      ) - 131.5
                                                            );
                                                        }
-                                   );
-				*/				
-                                   if ( window.innerWidth < 760 ) {
-                                       $( 'header' ).css( 'display', 'none' )
-                                   }
-                               }
-                    );
+				
+                                   
+				*/
+				console.log("Offset would be:" + A*B)
+				console.log("Current offset: " + document.getElementById("data-wrapper").style.top)
+				var offset = parseInt(document.getElementById("data-wrapper").style.top.slice(0,-2))
+				console.log("As int: ", offset);
+                        	           if ( window.innerWidth < 760 ) {
+                                	       $( 'header' ).css( 'display', 'none' )
+                                   	  }
+                               });
+				
+                   });
         }
     </script>
     <!-- Bootstrap Core JavaScript -->
@@ -887,9 +982,9 @@
     <script src="js/contact_me.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
-    <script async defer
+    <!--<script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDc3V4dOnoxsLX14R5_-PAMj0OP0xbHnyA&callback=initMap">
-    </script>
+    </script>-->
 </div>
 </body>
 

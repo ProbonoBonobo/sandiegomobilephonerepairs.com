@@ -560,7 +560,7 @@ header {
 }
 
 .success {
-    height: 1200px;
+    
     padding-top: 133px;
     padding-bottom: 133px;
 }
@@ -572,16 +572,17 @@ header {
 
     height: 350px;
 }
-
+/*
 @media(max-width: 770px) {
 
 
     #iphone-screen-repairs > div {
-        /*height: 3330px;*/
+        height: 3330px;
         margin-top: 100px;
     }
 
 }
+*/
 
 .navbar-default {
     background: url('../img/apple-metallic-texture.jpg');
@@ -693,7 +694,8 @@ nav > img {
     }
 
     #page-top {
-        max-width: 100%;
+	width: 100vw;
+        /*max-width: 100%;*/
         overflow-x: hidden;
     }
     .btn-primary {
@@ -707,17 +709,18 @@ nav > img {
     }
 
 }
-
+/*
 @media (min-width: 1200px) {
     #data-wrapper {
         top: 56px !important;
     }
 }
+*/
 
 
 @media (min-width: 991px) {
     .navbar {
-        min-width: 875px;
+        width: 875px;
     }
     .navbar li {
         width: 175px;
@@ -745,19 +748,20 @@ nav > img {
     .navbar-brand > img {
         transform: translateY(-7.5px);
     }
+/*
     #iphone-screen-repairs {
         height: 1600px !important;
-    }
+    }*/
 
     .scroll-top .btn {
         display: none;
     }
-
+/*
     #data-wrapper {
         top:0px !important;
         margin-top: -130px !important;
     }
-
+*/
 
 
     .navbar-default {
@@ -787,6 +791,18 @@ nav > img {
 
 
     }
+
+#data-wrapper {
+    padding-right: 0px !important;
+    width: 27vw;
+    left: 36vw;
+    margin-top: 0px !important;
+    top: 24vw;
+}
+#review-headline {
+    width: 26vw;
+}
+/*
     #rotd-header {
         height: 400px;
         margin-top: -100px;
@@ -803,7 +819,7 @@ nav > img {
         margin-top: -20px;
 
     }
-
+*/
 
 }
 
